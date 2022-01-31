@@ -16,7 +16,7 @@ function mostrarTexto(){
     document.getElementById('holamundo').style.display = "block"
 }
 
-/*Menu Hamburguesa*/
+/*MENU HAMBURGUESA*/
 const btn_menu = document.querySelector(".btn_menu")
 const menus = document.querySelector(".menus")
 
