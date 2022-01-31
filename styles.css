@@ -213,6 +213,9 @@ body{
     
 }
 @media screen and (max-width: 950px) {
+    body{
+        height: 1106px;
+    }
     .container{
         display: flex;
         justify-content: center;
@@ -229,6 +232,9 @@ body{
     }
 }
 @media screen and (max-width: 840px) {
+    body{
+        height: 1406px;
+    }
     .barra{
         display: flex;
         width: 100%;
@@ -300,6 +306,9 @@ body{
     }
 }
 @media screen and (max-width: 480px) {
+    body{
+        height: 1406px;
+    }
     .barra{
         width: 100%;
 
