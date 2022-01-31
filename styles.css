@@ -1,0 +1,314 @@
+body{
+    margin:0px;
+    background-color: #FFFFFF;
+    padding: 0;
+    width: 100%;
+    height: 769px;
+    box-sizing: border-box;
+}
+.header{
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #C4C4C4;
+}
+    
+    /*Barra de Navegación */
+    .barra {
+        display: flex;
+        flex-wrap: wrap;
+        background: #C4C4C4 0% no-repeat padding-box;
+        margin-top: 0px;
+        width: 100%;
+        height: 50px;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    /*---- Logo Lyracons*/
+    
+    .lyracons{
+        margin-left: 94px;
+        margin-top: 11px;
+        margin-bottom: 12,21px;
+        width: 130px;
+        height: 26.79px;
+        background: transparent url('img/logo_lyracons.png') 0% 0% no-repeat padding-box;
+        opacity: 1;
+        
+    }
+    nav{
+        height: 100%;
+    }
+    /*---- Menu Items 1 -> SubMenus*/
+    .menus{
+        list-style: none;
+        margin:0 0 0 50px;
+        height: 100%;
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+    .submenu{
+        position: absolute;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        left: 0;
+        top:45px;
+        margin-top: 5px;
+        list-style: none;
+        visibility: hidden;
+        font: normal normal bold 12px/14px 'Lato';
+        font-family: 'Lato' sans-serif;
+        height: 150px;
+        width: 200px;
+        color: #FFFFFF;
+        background: #CA5310  0% no-repeat padding-box;
+    }
+    .submenu li a{ 
+        color: #FFFFFF;
+    }
+    .menuitem1{
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .menuitem1:hover .submenu{
+        opacity: 1;
+        margin-top: 1;
+        visibility: visible;
+    }
+    .submenulink{
+        margin-top:25px;
+        display: flex;
+        color: #000000;
+        font-size: 14px;
+        width: 100%;
+        text-decoration: none;
+        list-style: none;
+    }
+    .items{
+        margin-right: 21px;
+        text-decoration: none;
+        font: normal normal bold 16px/19px 'Lato';
+        font-weight: 700;
+        font-family: 'Lato' sans-serif;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+    }
+    /*Boton Menu Hamburguesa*/
+    .btn_menu{
+        color: #000000;
+        background: none;
+        border: none;
+        font-size: 30px;
+        padding: 0 20px;
+        line-height: 60px;
+        display: none;
+    }
+    /*SIDEBAR */
+    .sidebar{
+        margin-left: 71px;
+    }
+    .naranja{
+        margin:16px 12px 0px;
+        width: 200px;
+        height: 619px;
+        background: #CA5310 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+    .hola{
+        padding: 50px;
+        font-size: 14px;
+        font: normal normal bold 16px/19px 'Lato';
+        font-family: 'Lato' sans-serif;
+        color: #FFFFFF;
+        display: none;
+    }
+    
+    /*Tarjetas */
+    .container {
+        display: flex;
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+    .article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin:0;
+    }
+    .caja{
+        margin: 17px 14px 0px;
+        background: #EAEAEA 0% 0% no-repeat padding-box;
+        border: 1px solid #000000;
+        opacity: 1;
+        padding: 12px 15px;
+    }
+    .auriculares{
+        display: flex;
+        justify-content: center;
+    }
+    .auri{
+        width: 170px;
+        height: 170px;
+        background: transparent url('img/NoPath.png') 0% 0% no-repeat padding-box;
+        border: 1px solid #000000;
+        opacity: 1;
+    }
+    .boton{
+        display: flex;
+        margin-top: 14px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 26px;
+        background: #C4C4C4 0% 0% no-repeat padding-box;
+        font: normal normal bold 14px/18px 'Lato';
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+        border: none;
+        padding: 0;
+    }
+
+    h4{
+        text-align: left;
+        font: normal normal bold 12px/15px 'Lato';
+        font-family: 'Lato' sans-serif;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+        margin: 10px 0 0 0;
+    }
+    p{
+        text-align: left;
+        font: normal normal normal 12px/15px 'Lato';
+        font-family: 'Lato' sans-serif;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+        margin-top: 4px;
+        margin-bottom: 0px;
+    }
+
+
+@media screen and (max-width: 1225px) {
+    .sidebar{
+        width: 0%;
+        visibility: hidden;
+        margin:0px;
+    }
+    .article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width: 950px) {
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .barra{
+        display: flex;
+        flex-wrap: wrap;
+        background: #C4C4C4  0% no-repeat padding-box;
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 100%;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 840px) {
+    .barra{
+        display: flex;
+        width: 100%;
+        height: 70px;
+        align-items: center;
+    }
+    .lyracons{
+        width: 165px;
+        height: 34px;
+        background: transparent url('img/logo_lyracons.png') 0% 0% no-repeat padding-box;
+        opacity: 1;
+        margin-top:0px ;
+    }
+    .article{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .menus{
+        justify-content: flex-start;
+        margin-right: 20px;
+        margin: 0;
+        background-color: #FFFFFF;
+        position: absolute;
+        width: 100%;
+        display: flex;
+        padding: 20px 0;
+        height: 100%;
+        align-items: flex-start;
+        display: none;
+        opacity: 0;
+    }
+    .menuitem1{
+        height: auto;
+    }
+    .menus li {
+        margin: 32px 0px 20px 36px;
+    }
+    .menus_visible{
+        justify-content: flex-start;
+            margin-right: 20px;
+            margin: 0;
+            background-color: #FFFFFF;
+            position: absolute;
+            left: 0;
+            top: 70px;
+            width: 100%;
+            display: flex;
+            padding: 0px 0;
+            height: 1406px;
+            align-content: flex-start;
+            flex-direction: column;
+            animation: muestraMenu 200ms ease-in-out both;
+        }
+    .btn_menu{
+        display: block;
+
+    }
+    .btn_menu:focus:not(:focus-visible){
+        outline: none;
+    }
+    .submenu{
+        display: none;
+    }
+    @keyframes muestraMenu{
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+}
+@media screen and (max-width: 480px) {
+    .barra{
+        width: 100%;
+
+    }
+    .article{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
